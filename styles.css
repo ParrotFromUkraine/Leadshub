@@ -64,7 +64,7 @@ body {
 }
 
 .auth-button {
-    background-color: #f97316;
+    background-color: #005eef;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
@@ -73,7 +73,7 @@ body {
 }
 
 .auth-button:hover {
-    background-color: #ea580c;
+    background-color: #005eef;
 }
 
 /* Hero Section */
@@ -261,6 +261,8 @@ body {
     text-decoration: none;
     transition: background-color 0.3s;
 }
+
+
 
 .rewards-button:hover {
     background-color: #ea580c;
