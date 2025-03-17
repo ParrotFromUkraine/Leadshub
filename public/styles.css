@@ -644,3 +644,36 @@ body {
     margin: 10px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block; /* Показываем кнопку бургер-меню */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none; /* Скрываем навигацию по умолчанию */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav.active {
+    display: flex; /* Показываем навигацию при активации */
+  }
+
+  .auth {
+    display: none; /* Скрываем кнопки авторизации по умолчанию */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth.active {
+    display: flex; /* Показываем кнопки авторизации при активации */
+  }
+}
