@@ -518,14 +518,29 @@ body {
             font-weight: bold;
         }
 
-
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+  .logo {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nav {
+    display: none; /* Скрыть навигацию на мобильных устройствах */
+  }
+  .auth {
+    gap: 0.5rem;
+  }
+  .auth-button {
+    padding: 0.25rem 0.5rem;
+  }
+}
         
 
 
-
-
-
-        @media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -540,8 +555,8 @@ body {
     width: 100%;
   }
   .hero__img {
-    width: 100%;
-    height: auto;
+    width: 0px;
+    height: 0px;
   }
   .reg-btn {
     padding: 12px 20px;
