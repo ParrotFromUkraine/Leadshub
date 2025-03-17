@@ -73,7 +73,7 @@ body {
 }
 
 .auth-button {
-  background-color: #36b3fa;
+  background-color: #005eef;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -163,7 +163,7 @@ body {
 .reg-btn {
   padding: 16px 24px;
   color: white;
-  background-color: #36b3fa;
+  background-color: #005eef;
   border: none;
   border-radius: 4px;
   font-weight: bold;
