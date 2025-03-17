@@ -1,15 +1,16 @@
 const express = require('express')
 const ngrok = require('ngrok')
+const path = require('path')
 
 const app = express()
 const port = 5000
 
-// Разрешаем обработку JSON
-app.use(express.json())
+// Раздача статических файлов из папки "public"
+app.use(express.static(path.join(__dirname, 'public')))
 
-// Отображаем содержимое index.js при заходе на сервер
+// Отображение главной страницы
 app.get('/', (req, res) => {
-	res.send('Привет, мир! Этот сервер работает через ngrok!')
+	res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
 // Запуск сервера
