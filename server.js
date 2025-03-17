@@ -1,5 +1,4 @@
 const express = require('express')
-const ngrok = require('ngrok')
 const path = require('path')
 
 const app = express()
@@ -14,10 +13,6 @@ app.get('/', (req, res) => {
 })
 
 // Запуск сервера
-app.listen(port, async () => {
+app.listen(port, () => {
 	console.log(`Сервер запущен на http://localhost:${port}`)
-
-	// Автоматически запускаем ngrok
-	const url = await ngrok.connect(port)
-	console.log(`Сервер доступен через: ${url}`)
 })
